@@ -30,13 +30,7 @@ Trabajo perteneciente a la materia "Text mining" de Laura Alonso Alemany, FaMAF,
 1. Vectorización de las palabras con sklearn TfidfVectorizer, incluyendo bi y trigramas y excluyendo palabras con frecuencia de más de 0,8.
 2. Prueba con un rango de número de clusters con suma de cuadrados de las distancias de K-means (sklearn Kmeans).
 3. Elección del número óptimo mediante el método del codo (visualmente).
+4. Análisis cualitativo de la pureza de los clusters en cuanto a directorxs y países mediante gráficos de boxplot.
+5. Visualización de los clusters con nubes de palabras (wordcloud)
 
-## Procedimiento en detalle
-Utilizamos la herramienta Scapy para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
-
-      nlp = spacy.load('es', vectors=False, entity=False)
-      doc = nlp(dataset)
-      
-## Resultados
-k = 50
-ante', 'sin', 'de', 'y', 'luego', 'poder', 'según', 'finalmente', 
+### Grafos (aún sin comenzar)
