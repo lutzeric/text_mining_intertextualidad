@@ -22,13 +22,14 @@ Trabajo perteneciente a la materia "Text mining" de Laura Alonso Alemany, FaMAF,
     * Eliminación de palabras muy frecuentes y poco informativas: *película*, *personaje*, *director*, etc.
     * Eliminación de *stopwords* del español, leídas del archivo *spanish.txt*.
     * Eliminación de signos de puntuación, de interrogación, de exclamación, etc.
-    * Eliminación de espacios antes y después de las palabras
-5. Vectorización de las palabras.
+    * Eliminación de espacios antes y después de las palabras.
+    * Eliminación de sinopsis de menos de 250 caracteres.
+    * Eliminación de películas con datos faltantes.
 
 ### Clustering
-1. Elección de número de clusters.
-2. Centroides aleatorios.
-3. Algoritmo de k-means usando la distancia coseno para crear los clusters.
+1. Vectorización de las palabras con sklearn TfidfVectorizer, incluyendo bi y trigramas y excluyendo palabras con frecuencia de más de 0,8.
+2. Prueba con un rango de número de clusters con suma de cuadrados de las distancias de K-means (sklearn Kmeans).
+3. Elección del número óptimo mediante el método del codo (visualmente).
 
 ## Procedimiento en detalle
 Utilizamos la herramienta Scapy para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
