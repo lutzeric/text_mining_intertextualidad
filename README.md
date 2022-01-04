@@ -8,7 +8,7 @@ El corpus elegido son sinopsis de cuatro ediciones del BAFICI (2010-2013), dispo
 Trabajo perteneciente a la materia "Text mining" de Laura Alonso Alemany, FaMAF, Universidad Nacional de Córdoba, 2021.
 
 Datos a tener en cuenta: desde el 2010 al 2013 la información es fácil de extraer automáticamente descargando los .csv de la página del Gobierno de la Ciudad, o bien scrapeando cada página de cada película en los sitios de cada edición. Dedidí utilizar este último procedimiento y quedarme con esas cuatro ediciones. La información extraída es el título, directorxs, duración, año, países donde se produjo y la sinopsis.
-Cada edición consta de entre 300 y 450 películas, totalizando alrededor de 1400 datos crudos para este corpus.
+Cada edición consta de entre 300 y 450 películas, totalizando alrededor de 1300 datos crudos para este corpus.
 Algunas sinopsis cuentan con la firma de la persona que la escribió (o la cita de la fuente como puede ser un diario), mientras que otras no. Esta información no fue considerada como parte de la sinopsis. 
 Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinopsis de menos de 250 caracteres también, ya que era muy improbable encontrar intertextualidad en ellas.
 
@@ -44,10 +44,12 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 5. Visualización de las palabras de cada cluster mediante nubes de palabras (biblioteca wordcloud)
 
 ### Grafos
-
+1. Generación de nodos a partir de cada título con nombre de más de 5 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
+2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez.
+3. Se arma el gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
 
 ## Procedimiento en detalle
-Utilizamos la herramienta Scapy para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
+Utilizamos la herramienta --- para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
 
       nlp = spacy.load('es', vectors=False, entity=False)
       doc = nlp(dataset)
