@@ -45,8 +45,8 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 
 ### Grafos
 1. Generación de nodos a partir de cada título con nombre de más de 5 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
-2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez.
-3. Se arma el gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
+2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez. Se descartaron películas sin intertextualidad con otras.
+3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
 
 ## Procedimiento en detalle
 Utilizamos la herramienta --- para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
