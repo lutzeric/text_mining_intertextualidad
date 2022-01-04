@@ -14,7 +14,9 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 
 
 
-## Procedimiento
+## Procedimiento general
+El trabajo paso por paso, con su código y comentarios está en el notebook intertextualidad_bafici.ipynb https://github.com/lutzeric/text_mining_intertextualidad/blob/main/intertexualidad_bafici.ipynb
+
 ### Extracción del corpus
 1. Extracción automática con bibliotecas request y beautifulSoup para cada edición por separado.
     * Variables de interés de cada película: 
@@ -47,6 +49,3 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 1. Generación de nodos a partir de cada título con nombre de más de 6 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
 2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez. Se descartaron películas sin intertextualidad con otras.
 3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
-
-## Procedimiento en detalle
-El trabajo paso por paso, con su código y comentarios está en el notebook intertextualidad_bafici.ipynb
