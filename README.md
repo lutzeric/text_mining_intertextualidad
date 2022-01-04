@@ -49,4 +49,4 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
 
 ## Procedimiento en detalle
-El trabajo paso por paso está en el archivo intertextualidad_bafici.ipynb
+El trabajo paso por paso, con su código y comentarios está en el notebook intertextualidad_bafici.ipynb
