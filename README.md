@@ -49,7 +49,4 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
 
 ## Procedimiento en detalle
-Utilizamos la herramienta --- para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
-
-      nlp = spacy.load('es', vectors=False, entity=False)
-      doc = nlp(dataset)
+El trabajo paso por paso está en el archivo intertextualidad_bafici.ipynb
