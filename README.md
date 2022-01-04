@@ -44,3 +44,10 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 5. Visualización de las palabras de cada cluster mediante nubes de palabras (biblioteca wordcloud)
 
 ### Grafos
+
+
+## Procedimiento en detalle
+Utilizamos la herramienta Scapy para separar en oraciones, en palabras y etiquetar cada palabra con su POS tag, morfología del tag y funcionalidad en la oración.
+
+      nlp = spacy.load('es', vectors=False, entity=False)
+      doc = nlp(dataset)
