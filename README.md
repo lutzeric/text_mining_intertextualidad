@@ -44,7 +44,7 @@ Las películas con datos faltantes fueron eliminadas. Aquellas (pocas) con sinop
 5. Visualización de las palabras de cada cluster mediante nubes de palabras (biblioteca wordcloud)
 
 ### Grafos
-1. Generación de nodos a partir de cada título con nombre de más de 5 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
+1. Generación de nodos a partir de cada título con nombre de más de 6 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
 2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez. Se descartaron películas sin intertextualidad con otras.
 3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
 
