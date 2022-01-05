@@ -50,7 +50,7 @@ El trabajo paso por paso, con su código y comentarios está en el notebook inte
 2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez. Se descartaron películas sin intertextualidad con otras.
 3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
 
-### Resultado de ejemplo de un grafo, donde cada nodo está coloreado según a qué edición (2010, 2011, 2012 o 2013) pertenece esa película.
+Resultado de ejemplo de un grafo, donde cada nodo está coloreado según a qué edición (2010, 2011, 2012 o 2013) pertenece esa película:
 ![grafo_edicion](https://user-images.githubusercontent.com/79468958/148290586-811f03ca-6d8e-461f-94a2-e81812177110.png)
 
 ## Discusión
