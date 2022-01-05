@@ -29,7 +29,7 @@ El trabajo paso por paso, con su código y comentarios está en el notebook inte
 
 2. Creación de archivos .txt con la información para cada edición.
 3. Extracción de los .txt y agrupamiento en una sola base de datos.
-4. Limpieza de los datos:
+4. Limpieza y filtrado de los datos:
     * Eliminación de las firmas (o citas) de las personas que escribieron las sinopsis, en caso de haber.
     * Eliminación de palabras muy frecuentes y poco informativas: *película*, *personaje*, *director*, etc.
     * Eliminación de *stopwords* del español, leídas de un archivo *spanish.txt*.
@@ -49,3 +49,16 @@ El trabajo paso por paso, con su código y comentarios está en el notebook inte
 1. Generación de nodos a partir de cada título con nombre de más de 6 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
 2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez. Se descartaron películas sin intertextualidad con otras.
 3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
+
+![grafo_edicion](https://user-images.githubusercontent.com/79468958/148290586-811f03ca-6d8e-461f-94a2-e81812177110.png)
+
+## Discusión
+Este trabajo no busca ser exhaustivo, sino más bien ser una excusa para poner en práctica conceptos y herramientas vistas en la materia. Varias de las decisiones tomadas, sobre todo aquellas que tienen que ver con qué películas no fueron tenidas en cuenta para el análisis, son completamente arbitrarias y buscaron hacer el resultado final del trabajo más fácil de interpretar. Otra persona que quiera trabajar con este mismo corpus podrá tomar decisiones sustancialmente diferentes a las que yo tomé, y así obtener resultados diferentes. 
+Dentro de las decisiones que tomé, dejo algunas que me parece importante destacar y discutir:
+1. La eliminación de _stop words_ y palabras de uso frecuente en las sinopsis, ya que no tiene sentido a la hora de hacer los clusters tener palabras como "el", "y", "o", "película" o "directora" que son comunes a todas o a una gran cantidad de las sinopsis y no revelan información que permita identificar a una película en particular. Sí me parece razonable dejar palabras o frases comunes, pero no universales, como "drama", "documental", "blanco y negro", ya que pueden ser características interesantes para diferenciar las películas entre sí. 
+2. Descartar para los grafos películas cuyo título es una palabra o nombre común del español, como "A", "Centro" o "Pablo": me parece razonable dejarlas afuera, ya que termina habiendo conexiones espurias por muchas sinopsis que nombran esas palabras sin hacer relación a esas películas. El problema de esto no es solo quedarse sinalgunas posibles intertextualidades reales, sino que no me parece una decisión fácil de automatizar. Habría en todo caso que hacer una lista con nombres o palabras comunes, que no necesariamente sean *stop words* y filtrar así varias de esas películas. Quizás podría hacerse esto y ver si los resultados cambian significativamente a como están ahora. Como solución rápida, pero poco elegante y muy discutible, decidí filtrar aquellas películas cuyo título es menor a 7 letras.
+3. No tomar en cuenta como intertextualidad a aquellas sinopsis que nombran solo el apellido de unx directorx (en vez de su nombre completo) o bien solo a unx directorx de una tupla de directorxs. Esta decisión obedece a dos razones: por un lado, evitar que haya conexiones espurias por apellidos comunes como "Ramirez" o "Smith", que pueden ser compartidos por varixs directorxs, y por otro lado, ahorrar tiempo en algo que no afecta al resultado cualitativo del trabajo. Desde ya, en un trabajo más serio esto se tendría que hacer cuidadosamente.
+4. Descartar películas sin conexión intertextual con otras. Esto es porque el objetivo del trabajo es encontrar formas de conectar las películas entre sí, y porque al haber muchas películas sin conexión explícita con otras, es mucho más fácil visualizar el grafo si estas no son tenidas en cuenta.
+5. No incorporar el peso a las conexiones en los grafos. Agregar el peso a las aristas según la cantidad de veces que se nombraba a un título o directorx es algo que probé y dejé de lado. Era algo que hacía más difícil la visualización del grafo sin agregarle información valiosa.
+7. No hacer análisis cuantitativos de la pureza de cada cluster o de la intertextualidad según el cluster o según la edición de cada película. Esto me parece interesante de hacer, pero por cuestiones de tiempo lo dejo para otra ocasión.
+8. Sería interesante tomar algunas muestras al azar y verificar manualmente cuántas de las intertexualidades son correctas. También sería interesante analizar estadísticamente si pertenecer a un mismo cluster da mayores probabilidades de encontrar intertextualidad entre dos películas.
