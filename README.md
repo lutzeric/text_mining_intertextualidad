@@ -19,7 +19,7 @@ El trabajo paso por paso, con su código y comentarios está en el notebook inte
 
 ### Extracción del corpus
 1. Extracción automática con bibliotecas request y beautifulSoup para cada edición por separado.
-Variables de interés de cada película: 
+* Variables de interés de cada película: 
      - título
      - dirección
      - países
