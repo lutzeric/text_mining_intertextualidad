@@ -19,13 +19,13 @@ El trabajo paso por paso, con su código y comentarios está en el notebook inte
 
 ### Extracción del corpus
 1. Extracción automática con bibliotecas request y beautifulSoup para cada edición por separado.
-    * Variables de interés de cada película: 
-        - título
-        - dirección
-        - países
-        - año
-        - duración
-        - sinopsis
+Variables de interés de cada película: 
+     - título
+     - dirección
+     - países
+     - año
+     - duración
+     - sinopsis
 
 2. Creación de archivos .txt con la información para cada edición.
 3. Extracción de los .txt y agrupamiento en una sola base de datos.
