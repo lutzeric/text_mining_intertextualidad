@@ -67,7 +67,7 @@ Dentro de las decisiones que tomé, dejo algunas que me parece importante destac
 9. Sería interesante tomar algunas muestras al azar y verificar manualmente cuántas de las intertexualidades son correctas para futuros trabajos relacionados. También sería interesante analizar estadísticamente si pertenecer a un mismo cluster da mayores probabilidades de encontrar intertextualidad entre dos películas.
 
 ## Recursos consultados
-Scrapeo de páginas web: https://colab.research.google.com/drive/1L5nHiP75k9ZmpA-N2HL8Ud4Grlk7anUv?usp=sharing
-Procesamiento de texto y nubes de palabras: https://colab.research.google.com/drive/1BzNWdDqEkR27jzRSJO1unB-Aqnc52RU4?usp=sharing
-Clustering: https://colab.research.google.com/drive/15C8_ERuZPmNqx7jjXGU-INJ0ES8yFaD1?usp=sharing
-Grafos: https://towardsdatascience.com/structuring-text-with-graph-representations-41dd4f2a3ab3
+- Scrapeo de páginas web: https://colab.research.google.com/drive/1L5nHiP75k9ZmpA-N2HL8Ud4Grlk7anUv?usp=sharing
+- Procesamiento de texto y nubes de palabras: https://colab.research.google.com/drive/1BzNWdDqEkR27jzRSJO1unB-Aqnc52RU4?usp=sharing
+- Clustering: https://colab.research.google.com/drive/15C8_ERuZPmNqx7jjXGU-INJ0ES8yFaD1?usp=sharing
+- Grafos: https://towardsdatascience.com/structuring-text-with-graph-representations-41dd4f2a3ab3
