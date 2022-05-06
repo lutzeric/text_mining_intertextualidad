@@ -48,10 +48,12 @@ El trabajo paso por paso, con su código y comentarios está en el notebook inte
 ### Grafos
 1. Generación de nodos a partir de cada título con nombre de más de 6 caracteres, para evitar películas llamadas "A", "Pablo", "Centro", etc.
 2. Armado de las relaciones dirigidas: un nodo apunta a otro si su sinopsis nombra el título o directorx/s de este último. Las repeticiones cuentan una sola vez. Se descartaron películas sin intertextualidad con otras.
-3. Armado del gráfico, con la opción de colorear cada nodo según su edición o cluster al que pertenece.
+3. Armado del gráfico, con la opción de colorear cada nodo según a qué edición, país o cluster pertenece.
 
 Resultado de ejemplo de un grafo, donde cada nodo está coloreado según a qué edición (2010, 2011, 2012 o 2013) pertenece esa película:
 ![grafo_edicion](https://user-images.githubusercontent.com/79468958/148290586-811f03ca-6d8e-461f-94a2-e81812177110.png)
+
+
 
 ## Discusión
 Este trabajo no busca ser exhaustivo, sino más bien ser una excusa para poner en práctica conceptos y herramientas vistas en la materia. Varias de las decisiones tomadas, sobre todo aquellas que tienen que ver con qué películas no fueron tenidas en cuenta para el análisis, son completamente arbitrarias y buscaron hacer el resultado final del trabajo más fácil de interpretar. Otra persona que quiera trabajar con este mismo corpus podrá tomar decisiones sustancialmente diferentes a las que yo tomé, y así obtener resultados diferentes. 
