@@ -66,6 +66,12 @@ Dentro de las decisiones que tomé, dejo algunas que me parece importante destac
 8. No hacer análisis cuantitativos de la pureza de cada cluster o de la intertextualidad según el cluster o según la edición de cada película. Esto me parece interesante de hacer, pero por cuestiones de tiempo lo dejo para otra ocasión.
 9. Sería interesante tomar algunas muestras al azar y verificar manualmente cuántas de las intertexualidades son correctas para futuros trabajos relacionados. También sería interesante analizar estadísticamente si pertenecer a un mismo cluster da mayores probabilidades de encontrar intertextualidad entre dos películas.
 
+## Conclusiones finales
+
+**Clusters**: el agrupamiento en clusters de las sinopsis no dio resultados interpretables. Para empezar, no hay un número de agrupamientos óptimo: la elección de 6 clusters fue arbitraria y solo responde a tener una cantidad manejable. Cada país y cada directorx frecuentemente tiene películas distribuidas en varios clusters diferentes.
+
+**Grafos**: el primer análisis mostró que la mayoría de las sinopsis no tienen intertextualidad con otras. Como estas películas no son de interés a los fines de este trabajo, decidí solo tener en cuenta aquellas con alguna conexión, incluso consigo misma. Luego, se me ocurrió colorear los nodos según edición y luego, según país, manteniendo siempre los mismos grafos. Los gráficos muestran que muchas de las sinopsis únicamente se conectan con una sola, y no de manera recíproca, sin ninguna tendencia clara a ser o no de diferentes ediciones, y en muchos casos siendo del mismo país. Por otro lado, los grafos con más de dos sinopsis muestran tanto agrupamientos heterogéneos en cuanto a las categorías mencionadas, como conexiones entre varias películas del mismo país o de la misma edición del festival, en muchos casos por pertenecer esas películas a muestras retrospectivas. 
+
 ## Recursos consultados
 - Scrapeo de páginas web: https://colab.research.google.com/drive/1L5nHiP75k9ZmpA-N2HL8Ud4Grlk7anUv?usp=sharing
 - Procesamiento de texto y nubes de palabras: https://colab.research.google.com/drive/1BzNWdDqEkR27jzRSJO1unB-Aqnc52RU4?usp=sharing
